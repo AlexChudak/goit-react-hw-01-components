@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 const Usercard = ({name,tag,location,avatar, followers, views, likes }) => {
     return<div class="profile">
@@ -28,6 +29,18 @@ const Usercard = ({name,tag,location,avatar, followers, views, likes }) => {
     </li>
   </ul>
 </div>;
+};
+
+
+
+
+Usercard.defaultProps = {
+  name:"Не пришел бекенд)))))"
+}
+
+Usercard.propTypes = {
+  name: PropTypes.string,
+  avatar:PropTypes.string.isRequired,
 };
 
 export default Usercard;
