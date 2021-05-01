@@ -1,5 +1,5 @@
 import React from "react";
-import Usercard from "./components/User/user";
+import UserCard from "./components/User/user";
 import user from "./components/User/user.json";
 
 import Statistics from "./components/Statistics/statistics";
@@ -15,7 +15,7 @@ import transactions from "./components/Transactions/transactions.json";
 const App = () => {
   return (
     <div>
-      <Usercard
+      <UserCard
         name={user.name}
         tag={user.tag}
         location={user.location}

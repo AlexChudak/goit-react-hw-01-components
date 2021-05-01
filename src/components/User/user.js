@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import styles from './User.module.css';
 
-const Usercard = ({name,tag,location,avatar,...stats}) => {
+const UserCard = ({name,tag,location,avatar,...stats}) => {
   return <div className={styles.profile}>
     <div className={styles.description}>
     <img 
@@ -36,13 +36,13 @@ const Usercard = ({name,tag,location,avatar,...stats}) => {
 
 
 
-Usercard.defaultProps = {
-  name:"Не пришел бекенд)))))"
+UserCard.defaultProps = {
+  name:"Backend is not working)))))"
 }
 
-Usercard.propTypes = {
+UserCard.propTypes = {
   name: PropTypes.string,
   avatar:PropTypes.string.isRequired,
 };
 
-export default Usercard;
+export default UserCard;
